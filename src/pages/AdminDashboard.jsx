@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import RestaurantCard from "../components/RestaurantCard";
 
 const AdminDashboard=()=>{
     const[restaurants, setRestaurants]=useState([]);
@@ -82,6 +83,10 @@ const AdminDashboard=()=>{
                 </div>
 
             </div>
+
+            <RestaurantCard />
+
+            
 
             </div>
 

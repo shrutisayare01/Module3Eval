@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import RestaurantCard from "../components/RestaurantCard";
 
 const CustomerDashboard=()=>{
     const[restaurants, setRestaurants]=useState([]);
@@ -19,6 +20,8 @@ const CustomerDashboard=()=>{
                 ))}
 
             </div>
+                        <RestaurantCard/>
+
 
         </div>
     )

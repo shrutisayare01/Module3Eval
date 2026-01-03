@@ -15,6 +15,15 @@ const RestaurantCard=({restaurant,isAdmin,onUpdate,onDelete})=>{
             <div>
                 <strong>Parking:</strong>
                 {parkingLot==='true'|| parkingLot==='true'?'Available':'Not Available'}
+
+                {/* conditional render */}
+
+                {isAdmin && (
+                    <div> 
+                        <button style={{flex:1,backgroundColor:"Blue",color:'White',padding:'10px'}} onClick={()=>onUpdate(restaurant)}>Update</button>
+                        <button  style={{flex:1,backgroundColor:"Red",color:'White',padding:'10px'}} onClick={()=>onDelete(restaurant.restaurantId)}>Delete</button>
+                    </div>
+                )}
             </div>
 
         </div>
